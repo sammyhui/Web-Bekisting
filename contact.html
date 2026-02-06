@@ -1,0 +1,57 @@
+<?php include 'template/header.php'; ?>
+
+<div class="container-fluid bg-dark py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background: linear-gradient(rgba(3, 15, 39, .7), rgba(3, 15, 39, .7)), url('https://images.unsplash.com/photo-1531834685032-c74696a6b941?q=80&w=2070') center center no-repeat; background-size: cover;">
+    <div class="container py-5 text-center">
+        <h1 class="display-3 text-white mb-3 animated slideInDown font-weight-bold">Hubungi Kami</h1>
+    </div>
+</div>
+
+<div class="container-fluid bg-light overflow-hidden py-5 px-lg-0">
+    <div class="container contact px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 ps-lg-0">
+                    <h6 class="text-warning text-uppercase font-weight-bold">Kirim Pesan</h6>
+                    <h1 class="mb-4 font-weight-bold">Minta Penawaran Harga Proyek</h1>
+                    <p class="mb-4 text-muted">Tim kami siap membantu menghitung kebutuhan bekisting dan scaffolding untuk proyek Anda. Silakan isi form di bawah ini.</p>
+                    <form action="proses_kontak.php" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subjek/Nama Proyek" required>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Pesan atau Detail Kebutuhan" id="message" style="height: 150px"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-warning w-100 py-3 font-weight-bold" type="submit">KIRIM SEKARANG</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                    <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862248!2d107.5731164!3d-6.9034443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x14607716752da31e!2sBandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1675666000000!5m2!1sid!2sid"
+                    frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php include 'template/footer.php'; ?>

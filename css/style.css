@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    background: #f8f9fa;
+}
+
+h1, h2, h3 {
+    color: #030f27;
+    font-weight: 700;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+    padding: 20px 0;
+    background: #ffffff;
+}
+
+.logo h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.logo span {
+    color: #fdbe33; /* Warna Kuning Konstruksi */
+}
+
+.top-bar-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+/* Navbar */
+.nav-bar {
+    background: #030f27;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding: 20px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fdbe33;
+}
+
+.btn-quote {
+    background: #fdbe33;
+    color: #030f27;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+/* Footer */
+.footer {
+    padding-top: 60px;
+    background: #030f27;
+    color: #ffffff;
+}
+
+.footer h2 {
+    color: #fdbe33;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-link a {
+    display: block;
+    color: #dddddd;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-link a:hover {
+    padding-left: 10px;
+    color: #fdbe33;
+    text-decoration: none;
+}
+
+.copyright {
+    padding: 25px 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #fdbe33;
+    color: #030f27;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 9;
+}
+/* Custom Animation for Index */
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    background-color: #fdbe33 !important;
+}
+
+.service-box:hover i, .service-box:hover h4, .service-box:hover p {
+    color: #030f27 !important;
+}
+
+/* Glassmorphism effect for carousel caption */
+.carousel-caption {
+    background: rgba(3, 15, 39, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
