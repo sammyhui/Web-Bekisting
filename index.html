@@ -82,12 +82,61 @@
 <body>
 
 <!-- ================= HEADER ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#0a192f;">
+<div class="top-bar d-none d-md-block">
     <div class="container">
-        <a class="navbar-brand font-weight-bold" href="#">MITRA BEKISTING</a>
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <span class="mr-4">
+                    <i class="fas fa-envelope mr-2"></i> support@mitrabekisting.com
+                </span>
+                <span class="mr-4">
+                    <i class="fas fa-phone-alt mr-2"></i> +62 812 3456 7890
+                </span>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="social-box">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
+</div>
+
+<div class="nav-bar fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="logo">
+                <a href="index.html" class="text-decoration-none">
+                    <h1>MITRA<span>BEKISTING</span></h1>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">Profil</a>
+                    <a href="service.html" class="nav-item nav-link">Layanan</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Proyek</a>
+                    <a href="contact.html" class="nav-item nav-link">Kontak</a>
+
+                    <div class="nav-item d-flex align-items-center ml-lg-4">
+                        <a href="contact.html" class="btn-main text-decoration-none shadow">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
 <!-- ================= END HEADER ================= -->
+
 
 
 <!-- ================= HERO ================= -->
@@ -198,9 +247,86 @@
 </div>
 
 <!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 Mitra Bekisting. All Rights Reserved.</p>
+<footer class="footer wow fadeIn" data-wow-delay="0.1s" style="background: var(--brand-dark); color: #ffffff; padding-top: 90px; margin-top: 80px; border-top: 6px solid var(--brand-primary); font-family: 'Montserrat', sans-serif;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-6 col-lg-3 mb-5">
+                <h2 class="text-white mb-4" style="font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                    Kontak Utama
+                </h2>
+                <div class="d-flex mb-3">
+                    <i class="fa fa-map-marker-alt text-warning mt-1 mr-3"></i>
+                    <p class="mb-0" style="color: rgba(255,255,255,0.7); font-size: 14px;">Jl. HR Bunyamin, Purwokerto, Jawa Tengah</p>
+                </div>
+                <div class="d-flex mb-3">
+                    <i class="fa fa-phone-alt text-warning mt-1 mr-3"></i>
+                    <p class="mb-0" style="color: rgba(255,255,255,0.7); font-size: 14px;">+62 812 3456 7890</p>
+                </div>
+                <div class="d-flex mb-4">
+                    <i class="fa fa-envelope text-warning mt-1 mr-3"></i>
+                    <p class="mb-0" style="color: rgba(255,255,255,0.7); font-size: 14px;">support@mitrabekisting.com</p>
+                </div>
+                <div class="d-flex">
+                    <a class="btn btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-social mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social" href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-5">
+                <h2 class="text-white mb-4">Unit Layanan</h2>
+                <div class="d-flex flex-column">
+                    <a class="footer-link mb-2" href="service.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Bekisting Gedung</a>
+                    <a class="footer-link mb-2" href="service.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Bekisting Jembatan</a>
+                    <a class="footer-link mb-2" href="service.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Sewa Scaffolding</a>
+                    <a class="footer-link" href="service.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Alat Bantu Proyek</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-5">
+                <h2 class="text-white mb-4">Tautan Cepat</h2>
+                <div class="d-flex flex-column">
+                    <a class="footer-link mb-2" href="about.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Tentang Kami</a>
+                    <a class="footer-link mb-2" href="portfolio.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Proyek Selesai</a>
+                    <a class="footer-link mb-2" href="contact.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Hubungi Kami</a>
+                    <a class="footer-link" href="contact.html"><i class="fa fa-chevron-right mr-2 small-icon"></i>Minta Penawaran</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-5">
+                <h2 class="text-white mb-4">Newsletter</h2>
+                <p style="color: rgba(255,255,255,0.7); font-size: 14px;">
+                    Dapatkan pembaruan stok alat dan info harga sewa terbaru kami.
+                </p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Email Anda">
+                    <div class="input-group-append">
+                        <button class="btn" style="background: var(--brand-primary); color:#fff;">KIRIM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-4 pb-4" style="background: rgba(0,0,0,0.3); margin-top: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0" style="font-size: 13px; color: rgba(255,255,255,0.5);">
+                        &copy; 2026 <span class="text-warning font-weight-bold">Mitra Bekisting</span>. Seluruh Hak Cipta Dilindungi.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="mb-0" style="font-size: 13px; color: rgba(255,255,255,0.5);">
+                        Dikembangkan oleh <span class="text-white font-weight-bold">SI Sammy</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+
 
 </body>
 </html>
+
