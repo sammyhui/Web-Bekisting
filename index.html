@@ -1,72 +1,206 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<title>Mitra Bekisting - Solusi Konstruksi Modern</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mitra Bekisting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-<link href="./lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<style>
-:root {
-  --brand-primary:#ff8c00;
-  --brand-secondary:#ffb400;
-  --brand-dark:#0a192f;
-  --brand-light:#f4f7f6;
-}
+    <!-- Animate / WOW -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
-body{
-  font-family:'Montserrat',sans-serif;
-  background:var(--brand-light);
-}
-</style>
+    <style>
+        :root{
+            --brand-primary:#ff8c00;
+            --brand-dark:#0a192f;
+        }
+
+        body { overflow-x: hidden; }
+
+        /* HERO OVERLAY */
+        .hero-overlay-modern {
+            position:absolute; top:0; left:0;
+            width:100%; height:100%;
+            background:linear-gradient(90deg, rgba(10,25,47,.9), rgba(10,25,47,.4));
+        }
+
+        .btn-animate-custom{
+            background:var(--brand-primary);
+            color:#fff;
+            border-radius:5px;
+            transition:.4s;
+        }
+        .btn-animate-custom:hover{
+            background:#fff;
+            color:var(--brand-primary);
+            transform:translateY(-5px);
+        }
+
+        /* FEATURE */
+        .feature-card-new{border-radius:10px; transition:.5s;}
+        .bg-brand-primary{background:var(--brand-primary);}
+        .icon-box-new{
+            width:70px;height:70px;
+            display:flex;align-items:center;justify-content:center;
+            border-radius:50%;
+            font-size:30px;
+            background:rgba(255,140,0,.1);
+        }
+        .icon-box-new.white{background:rgba(255,255,255,.2);color:#fff;}
+        .feature-card-new:hover{transform:scale(1.05);}
+
+        /* SERVICE */
+        .service-card-modern{border-radius:20px;overflow:hidden;transition:.5s;}
+        .service-card-modern.highlighted{background:var(--brand-dark);color:#fff;}
+        .service-img-wrap{height:220px;overflow:hidden;}
+        .service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:.8s;}
+        .service-card-modern:hover img{transform:scale(1.2);}
+        .service-card-modern:hover{transform:translateY(-15px);}
+
+        .btn-detail-modern{
+            font-weight:700;
+            text-transform:uppercase;
+            color:var(--brand-primary);
+            text-decoration:none;
+            font-size:14px;
+        }
+
+        footer{
+            background:#0a192f;
+            color:#fff;
+            padding:40px 0;
+            text-align:center;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar d-none d-md-block" style="background:#fff;border-bottom:2px solid var(--brand-primary);padding:12px 0">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <span class="mr-4"><i class="fas fa-envelope text-warning mr-2"></i>support@mitrabekisting.com</span>
-        <span><i class="fas fa-phone-alt text-warning mr-2"></i>+62 812 3456 7890</span>
-      </div>
-      <div class="col-md-4 text-right">
-        <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </div>
+<!-- ================= HEADER ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#0a192f;">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="#">MITRA BEKISTING</a>
     </div>
-  </div>
+</nav>
+<!-- ================= END HEADER ================= -->
+
+
+<!-- ================= HERO ================= -->
+<div id="carousel" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" style="height:100vh;object-fit:cover;">
+            <div class="hero-overlay-modern d-flex align-items-center">
+                <div class="container">
+                    <h4 class="text-warning text-uppercase mb-3" style="letter-spacing:4px;border-left:4px solid var(--brand-primary);padding-left:15px;">
+                        Konstruksi & Infrastruktur
+                    </h4>
+                    <h1 class="display-1 text-white font-weight-bold">
+                        MITRA <span style="color:var(--brand-primary);">BEKISTING</span>
+                    </h1>
+                    <p class="lead text-white mb-4" style="max-width:600px;">
+                        Partner terpercaya penyedia alat bekisting jembatan & scaffolding.
+                    </p>
+                    <a href="contact.html" class="btn btn-animate-custom btn-lg">
+                        KONSULTASI GRATIS <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-  <div class="container">
-    <a class="navbar-brand font-weight-bold" href="index.html">
-      MITRA<span style="color:var(--brand-primary)">BEKISTING</span>
-    </a>
-
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNav">
-      <div class="navbar-nav ml-auto text-uppercase font-weight-bold">
-        <a class="nav-item nav-link active" href="index.html">Home</a>
-        <a class="nav-item nav-link" href="about.html">Profil</a>
-        <a class="nav-item nav-link" href="service.html">Layanan</a>
-        <a class="nav-item nav-link" href="portfolio.html">Proyek</a>
-        <a class="nav-item nav-link" href="contact.html">Kontak</a>
-        <a href="contact.html" class="btn btn-warning ml-lg-3">Pesan Sekarang</a>
-      </div>
+<!-- ================= FEATURE ================= -->
+<div class="container-fluid" style="margin-top:-80px;z-index:10;position:relative;">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center p-5 bg-white shadow feature-card-new">
+                    <div class="icon-box-new mr-3"><i class="fa fa-hard-hat text-warning"></i></div>
+                    <div>
+                        <h5 class="font-weight-bold">Safety First</h5>
+                        <p class="mb-0 text-muted">Material lolos uji beban</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center p-5 bg-brand-primary text-white shadow feature-card-new">
+                    <div class="icon-box-new white mr-3"><i class="fa fa-handshake"></i></div>
+                    <div>
+                        <h5 class="font-weight-bold">Professional</h5>
+                        <p class="mb-0 text-white-50">Kerjasama transparan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center p-5 bg-white shadow feature-card-new">
+                    <div class="icon-box-new mr-3"><i class="fa fa-map-marked-alt text-warning"></i></div>
+                    <div>
+                        <h5 class="font-weight-bold">Layanan Luas</h5>
+                        <p class="mb-0 text-muted">Pengiriman seluruh proyek</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
+</div>
+
+<!-- ================= SERVICE ================= -->
+<div class="container py-5 mt-5">
+    <div class="text-center mb-5">
+        <h6 class="text-warning text-uppercase">Layanan Kami</h6>
+        <h1 class="font-weight-bold">Solusi Produk Unggulan</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card service-card-modern shadow">
+                <div class="service-img-wrap">
+                    <img src="img/2.jpg">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="font-weight-bold">Bekisting Lantai</h4>
+                    <p class="text-muted small">Sistem bongkar pasang cepat</p>
+                    <a href="service.html" class="btn-detail-modern">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card service-card-modern highlighted shadow">
+                <div class="service-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=500">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="font-weight-bold text-warning">Bekisting Jembatan</h4>
+                    <p class="text-white-50 small">Presisi ukuran milimeter</p>
+                    <a href="service.html" class="btn-detail-modern text-warning">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card service-card-modern shadow">
+                <div class="service-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=500">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="font-weight-bold">Scaffolding</h4>
+                    <p class="text-muted small">Berbagai ukuran</p>
+                    <a href="service.html" class="btn-detail-modern">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Mitra Bekisting. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
